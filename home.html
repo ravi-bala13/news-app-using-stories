@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+
+        h1{
+            margin-left: 200px;
+        }
+
+        #container{
+
+            width: 900px;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .each_story{
+
+            /* background-color: blueviolet; */
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        /* .title_div{
+
+            border: 1px solid blue;
+
+        } */
+
+        .each_story > div{
+
+            height: 200px;
+            width: 300px;
+            padding: 5px;
+            /* border: 1px solid blue; */
+            box-sizing: border-box;    
+            overflow: hidden;        
+
+        }
+
+        .title_div > .title_p{
+            
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        
+
+        img{
+
+            width: 290px;
+            height: 190px;
+
+        }
+
+        .descript-p{
+            font-size: 12px;
+        }
+
+
+        button{
+            margin-left: 900px;
+            width: 100px;
+            height: 25px;
+            border-radius: 7px;
+            background-color: turquoise;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="search.html"><button>Goto search</button></a>
+
+    <h1>The Latest</h1>
+    
+    <div id="container"></div>
+
+</body>
+</html>
+<script src="home.js"></script>

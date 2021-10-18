@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search page</title>
+    <style>
+
+        h1{
+            margin-left: 200px;
+        }
+
+        #container{
+
+            width: 900px;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .each_story{
+
+            /* background-color: blueviolet; */
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        /* .title_div{
+
+            border: 1px solid blue;
+
+        } */
+
+        .each_story > div{
+
+            height: 200px;
+            width: 300px;
+            padding: 5px;
+            /* border: 1px solid blue; */
+            box-sizing: border-box;            
+
+        }
+
+        .title_div > .title_p{
+            
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        
+
+        img{
+
+            width: 290px;
+            height: 190px;
+
+        }
+
+        .descript-p{
+            font-size: 12px;
+        }
+
+        #search-div{
+            margin: 1px solid red;
+            width: 400px;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        #input{
+
+            box-sizing: border-box;
+            padding: 5px;
+            width: 300px;
+            height: 30px;
+            border-radius: 7px;
+
+        }
+        button{
+
+            width: 70px;
+            height: 30px;
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+    <!-- <h1>The Latest</h1> -->
+
+    <div id="search-div">
+
+        <input id="input" type="text" placeholder="Search Stories">&nbsp;&nbsp;<button onclick="Get_stroies()">search</button>
+
+    </div>
+    
+    <div id="container"></div>
+
+</body>
+</html>
+
+<script src="search.js"></script>
